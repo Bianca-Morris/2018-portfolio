@@ -27,7 +27,7 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#top-nav" data-offset="50">
     <nav class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -55,7 +55,7 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
           <h1>Web Development</h1>
           <h2>and Digital Design</h2>
           <i class="fa fa-code fa-2x"></i>
-          <p>Hi! I'm a multimedia specialist, currently completing a Bachelor's degree in Cinema and Media Studies at Wellesley College. I love graphic design, front end web development, and interactive documentary  production.</p>
+          <p>Hi! I'm a recent Wellesley graduate, and current Engineering Fellow. I love front end web development, graphic design, and creating smooth, memorable user experiences.</p>
           <a href="https://www.linkedin.com/in/biancamorris" class="btn btn-default silver-button">
             <i class="fa fa-linkedin-square"></i>
           </a>
@@ -72,28 +72,55 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
       <section class="container" id="about-page">
         <header>
           <h2>About Me</h2>
-          <h4>Developer, Designer, Autodidact</h4>
+          <h4>A multimedia rockstar, basically</h4>
           <hr>
         </header>
         <div class="row">
           <div class="col-sm-4">
-            <img src="https://s25.postimg.org/4hr298rgf/squarish.jpg" class="img-responsive center-block">
-            <button class="btn center-block purple-button" data-toggle="modal" data-target="#cvModal"><i class="fa fa-eye"></i> View CV</button>
-            <a href="https://drive.google.com/file/d/0BxDuGL72i6MvVXRFM1JxN3RsU2M/view?usp=sharing"><button class="btn btn-default center-block silver-button"><i class="fa fa-download"></i> Download CV</button>
+            <img src="/img/bianca.jpg" class="img-responsive center-block">
+            <!-- Modal broke in bootstrap update... need to fix. -->
+            <!-- <button class="btn center-block purple-button" data-toggle="modal" data-target="#cvModal">
+              <i class="fa fa-eye"></i> View CV
+            </button> -->
+            <a href="https://drive.google.com/file/d/0BxDuGL72i6MvVXRFM1JxN3RsU2M/view?usp=sharing">
+              <button class="btn btn-default center-block silver-button">
+                <i class="fa fa-download"></i> Download CV
+              </button>
             </a>
           </div>
           <div class="col-sm-8" id="bio">
-            <h3 class="text-left">Interactive Media with a Social Conscience</h3>
-              <p>As a Cinema and Media Studies major at Wellesley, most of my coursework has been largely theoretical, and usually with an emphasis on documentary film and new media. Since I began cross-registering at MIT, my interests have become increasingly technical. I've always been interested in programming (even took a Python course at Wellesley in my sophomore year), but it wasn't until my MIT coursework introduced me to the intersections between code and social change that I really opened up to the possibilities. I started seeing problems that code could solve in my daily life: in my Japanese language studies, in my extracurricular activities... everywhere.</p>
-            <p>So much so that I have chosen to, in addition to my CAMS studies, begin teaching myself Front End Web Development, and now work on a number of side projects to further hone these skills. Now that I've found the purpose in programming, I find it to be an engaging, creative and rewarding experience.</p>
-              <p>One day, I hope to one day be able to merge my formal education in documentary film studies with  new media technologies to create narrative and data-driven, interactive media experiences with the power to change the world for the better.</p>
-            <p>When I'm not working on my code, I work at the Wellesley College Office of Communications and Public Affairs as a Digital Content Assistant. I can also be found filming sketches for <a href="https://www.youtube.com/user/WellesleyCollegeTV">Wellesley College Television</a> (WCTV), producing print and digital media for <a href="http://seedkit.wordpress.com">SeedKit</a> or playing custom maps in Left 4 Dead 2.</p>
+            <h2 style="font-size: 16px;">Education</h2>
+              <h4 class="text-left">Wellesley College, Class of 2017</h4>
+                <ul>
+                  <li>Bachelors of Arts in Cinema and Media Studies</li>
+                  <li>Cross-Registered at MIT's Department of Comparative Media Studies (Spring 2016)</li>
+                  <li>Web Director for Wellesley College Television (2016-2017)</li>
+                </ul>
+            <h2 style="font-size: 16px;">Experience</h2>
+              <h4 class="text-left">UI/UX Intern at Kindred Talent</h4>
+                <ul>
+                  <li>Work closely with product lead to build various responsive UI workflows for users</li>
+                  <li>Iterate and implement several React UI components across the codebase</li>
+                  <li>Push code to production weekly, participate in code reviews with tech lead, actively working on moving product
+from private beta to live public launch</li>
+                </ul>
+              <h4 class="text-left">2017 Engineering Fellow at Horizons School of Technology</h4>
+                <ul>
+                  <li>Year-long engineering fellowship led by senior infrastructure and front-end engineers</li>
+                </ul>
+              <h4 class="text-left">Digital Content Assistant</h4>
+                <ul>
+                  <li>Worked alongside the Web Director to maintain and expand the Wellesley College website</li>
+                  <li>Supported the execution of content/feature updates using Drupal CMS, HTML, and CSS</li>
+                  <li>Generated digital assets in Adobe Photoshop, InDesign, and Illustrator</li>
+                  <li>Conducted student body polls and user research for feature planning</li>
+                </ul>
           </div>
         </div>
       </section>
-
-    <div class="modal fade" id="cvModal" role="dialog">
-        <div class="modal-dialog "> <!--modal-lg-->
+    <!-- Modal broke in bootstrap update... need to fix. -->
+    <!-- <div class="modal fade" id="cvModal" role="dialog">
+        <div class="modal-dialog ">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -123,66 +150,166 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
       <section class="container" id="portfolio-page">
         <header>
-          <h2>Portfolio</h2>
-          <h4>Projects from 2015-2016</h4>
+          <h2>Featured Projects</h2>
+          <h4>A journey in code: 2015-2018</h4>
           <hr></hr>
         </header>
         <div class="row">
           <div class="col-sm-6">
-            <img class="img-responsive center-block" src="https://s25.postimg.org/c9gyzaadb/huxleytribute.jpg"></img>
-            <h4>Aldous Huxley Tribute Page (July 2016)</h4>
+            <img
+              class="img-responsive center-block"
+              src="/img/kindred.png"
+            />
+            <h4>KindredTalent (May 2018)</h4>
             <ul>
-              <li><em>Purpose:</em> To fulfill the 'Build a Tribute Page' requirement of FreeCodeCamp's Front End Web Development Certificate.</li>
-              <li><em>Skills:</em> HTML, CSS, Bootstrap</li>
+              <li>
+                <em>Purpose:</em>
+                To fulfill the 'Build a Tribute Page' requirement of
+                FreeCodeCamp's Front End Web Development Certificate.
+              </li>
+              <li>
+                <em>Skills:</em>
+                HTML, CSS, Bootstrap
+              </li>
             </ul>
           </div>
           <div class="col-sm-6">
-            <img class="img-responsive center-block" src="https://s25.postimg.org/5zlpcaayn/Seedkit.jpg"></img>
+            <img
+              class="img-responsive center-block"
+              src="/img/gnom.png"
+            />
+            <h4>gNom (March 2018)</h4>
+            <ul>
+              <li>
+                <em>Purpose:</em>
+                To produce a 'data-driven interactive documentary' experience
+                for CMS.338, a course I took with Professor Uricchio at MIT.
+              </li>
+              <li>
+                <em>Skills:</em>
+                HTML, CSS, Foundation, Javascript, jQuery, and Highcharts.js
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <img
+              class="img-responsive center-block"
+              src="/img/fittest.png"
+            />
+            <h4>Fittest (December 2017)</h4>
+            <ul>
+              <li>
+                <em>Purpose:</em>
+                To produce a 'data-driven interactive documentary' experience
+                for CMS.338, a course I took with Professor Uricchio at MIT.
+              </li>
+              <li>
+                <em>Skills:</em>
+                HTML, CSS, Foundation, Javascript, jQuery, and Highcharts.js
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <img
+              class="img-responsive center-block"
+              src="/img/collabnotes.png"
+            />
+            <h4>Collaborative Notes (November 2017)</h4>
+            <ul>
+              <li>
+                <em>Purpose:</em>
+                To fulfill the 'Build a Tribute Page' requirement of
+                FreeCodeCamp's Front End Web Development Certificate.
+              </li>
+              <li>
+                <em>Skills:</em>
+                HTML, CSS, Bootstrap
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <img
+              class="img-responsive center-block"
+              src="/img/wctvsite.png"
+            />
+            <h4>WCTV Online (May 2017)</h4>
+            <ul>
+              <li>
+                <em>Purpose:</em>
+                To fulfill the 'Build a Tribute Page' requirement of
+                FreeCodeCamp's Front End Web Development Certificate.
+              </li>
+              <li>
+                <em>Skills:</em>
+                HTML, CSS, Bootstrap
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <img
+              class="img-responsive center-block"
+              src="/img/Seedkit.jpg"
+            />
             <h4>SeedKit Data Explorer (May 2016)</h4>
             <ul>
-              <li><em>Purpose:</em> To produce a 'data-driven interactive documentary' experience for CMS.338, a course I took with Professor Uricchio at MIT.</li>
-              <li><em>Skills:</em> HTML, CSS, Foundation, Javascript, jQuery, and Highcharts.js</li>
+              <li>
+                <em>Purpose:</em>
+                To produce a 'data-driven interactive documentary' experience
+                for CMS.338, a course I took with Professor Uricchio at MIT.
+              </li>
+              <li>
+                <em>Skills:</em>
+                HTML, CSS, Foundation, Javascript, jQuery, and Highcharts.js
+              </li>
             </ul>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <img class="img-responsive center-block" src="https://s25.postimg.org/4qxtqnj0f/audiocracy.jpg"></img>
-            <h4>Audiocracy (February 2016)</h4>
-            <ul>
-              <li><em>Purpose:</em> A team entry for the WHack Spring 2016 Hackathon for which I built the UI/UX with Julia Han. Galen Cheung wrote the back-end with Javascript and the Spotify API.  [on hiatus]</li>
-              <li><em>Skills:</em> HTML, CSS, Bootstrap</li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <img class="img-responsive center-block" src="https://s25.postimg.org/956b2htkv/oldsite.jpg"></img>
-            <h4>Bianca-Morris.com (February 2016)</h4>
-            <ul>
-              <li><em>Purpose:</em> To create a complete, full-featured personal website/portfolio with only vanilla CSS styling.</li>
-              <li><em>Skills Used:</em> HTML, CSS, Javascript, Jquery</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <img class="img-responsive center-block" src="https://s25.postimg.org/h6ujkeccf/genkiflash.jpg"></img>
+            <img
+              class="img-responsive center-block"
+              src="/img/genkiflash.jpg"
+            />
             <h4>GenkiFLASH (January 2016)</h4>
             <ul>
-              <li><em>Purpose:</em> To streamline my Japanese language learning by creating a flash-card program specific to my course's curriculum. [in Alpha]</li>
-              <li><em>Skills Used:</em> Python, Tkinter, Py2Exe</li>
+              <li>
+                <em>Purpose:</em>
+                To streamline my Japanese language learning
+                by creating a flash-card program specific to my course's
+                curriculum. [in Alpha]
+              </li>
+              <li>
+                <em>Skills Used:</em>
+                Python, Tkinter, Py2Exe
+              </li>
             </ul>
           </div>
           <div class="col-sm-6">
-            <img class="img-responsive center-block" src="https://s25.postimg.org/aixxxssu7/nourish.jpg"></img>
+            <img
+              class="img-responsive center-block"
+              src="/img/nourish.jpg"
+            />
             <h4>Nourish International E-Letter (April 2015)</h4>
             <ul>
-              <li><em>Purpose:</em> To produce an E-Letter to thank people who donated to Nourish International during our annual 'Giving Challenge' fundraiser. Built specifically for Gmail's email client.</li>
-              <li><em>Skills Used:</em> HTML, CSS</li>
+              <li>
+                <em>Purpose:</em>
+                To produce an E-Letter to thank people who
+                donated to Nourish International during our annual 'Giving
+                Challenge' fundraiser. Built specifically for Gmail's email client.
+              </li>
+              <li>
+                <em>Skills Used:</em>
+                HTML, CSS
+              </li>
             </ul>
           </div>
         </div>
@@ -198,25 +325,88 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
         </header>
         <div class="row">
           <div class="col-sm-6" id="contact-text">
-            <p>I'm currently looking for Fall 2016/Spring 2017 internships where I can further develop my coding and design skills. If you think I could be the right person for a job, send me a note through this form, or contact me at my LinkedIn page.</p>
+            <p>I'm currently looking for Fall 2016/Spring 2017 internships where
+              I can further develop my coding and design skills. If you think I
+              could be the right person for a job, send me a note through this
+              form, or contact me at my LinkedIn page.</p>
             <p>Thanks!</p>
           </div>
           <div class="col-sm-6" id="contact-form">
-            <form action="mailto:biancamorris@hotmail.com" method="post" enctype="text/plain">
+            <form action="/submitMail" method="post">
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="name" class="form-control" placeholder="Name">
+                <label for="fname">First Name</label>
+                <input
+                  id="fname"
+                  type="text"
+                  name="fname"
+                  class="form-control"
+                  placeholder="First name"
+                  required
+                  minlength="3"
+                  maxlength="20"
+                >
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input
+                  id="lname"
+                  type="text"
+                  name="lname"
+                  class="form-control"
+                  placeholder="Surname"
+                  required
+                  minlength="3"
+                  maxlength="20"
+                >
               </div>
               <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" class="form-control" placeholder="Email">
+                <!-- Regex pattern for email address validation retrieved from
+                CSS-Tricks.com -->
+                <input
+                  id="sender"
+                  type="email"
+                  name="sender"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                  title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                >
               </div>
               <div class="form-group">
-                <label for="comment">Comment</label>
-                <textarea rows="5" cols="30" type="comment" class="form-control" placeholder="Comment"></textarea>
+                <label for="subject">Subject</label>
+                <input
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                  minlength="3"
+                  maxlength="50"
+                >
               </div>
-              <button type="reset" class="btn silver-button"><i class="fa fa-trash"></i> Reset</button>
-              <button type="submit" name="submit" class="btn purple-button" value="send"><i class="fa fa-send-o"></i> Submit</button>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  cols="30"
+                  type="comment"
+                  class="form-control"
+                  placeholder="Write your message here..."
+                  required
+                  minlength="25"
+                  maxlength="500"
+                ></textarea>
+              </div>
+              <button type="reset" class="btn silver-button">
+                <i class="fa fa-trash"></i> Reset
+              </button>
+              <button type="submit" name="submit" class="btn purple-button" value="send">
+                <i class="fa fa-send-o"></i> Submit
+              </button>
             </form>
           </div>
         </div>
@@ -229,7 +419,12 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
         <div class="row">
           <div class="col-sm-6">
             <h3>About This Page</h3>
-            <p>Made with HTML, CSS, Bootstrap (w/FontAwesome), and jQuery by Bianca Allyn Morris. Created from scratch to fulfill the "Build a Portfolio" requirement for FreeCodeCamp's Front End Web Development Certificate.</p>
+            <p>
+              Made with HTML, CSS, Bootstrap (w/FontAwesome), and jQuery by
+              Bianca Allyn Morris. Created from scratch to fulfill the "Build a
+              Portfolio" requirement for FreeCodeCamp's Front End Web Development
+              Certificate.
+            </p>
           </div>
           <div class="col-sm-6 text-center">
             <h3>Find Me on the Web</h3>
@@ -265,18 +460,16 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
         <h4>
             Bianca Allyn Morris
             <i class="fa fa-copyright"></i>
-            2016. All Rights Reserved.
+            2018. All Rights Reserved.
         </h4>
       </div>
     </footer>
-
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-
     <!-- Bootstrap.js -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
