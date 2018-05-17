@@ -1,4 +1,4 @@
-/* General Styles */
+/* General styles */
 body {
   background-color: #333;
 }
@@ -18,7 +18,16 @@ nav {
     color: #337ab7;
   }
   nav a {
-    color: #C2C7EA;
+    color: #fff;/*#C2C7EA;*/
+  }
+  .navbar-brand {
+    color: #C2C7EA
+  }
+  .navbar-brand:hover {
+    color: #fff;
+  }
+  nav button span {
+    border: solid white 2px;
   }
 
 #splash-page {
@@ -46,8 +55,13 @@ nav {
       margin: 0 auto;
     }
     .silver-button {
-      margin-top: 20px;
       color: #545EA3;
+    }
+    .silver-button:hover {
+      color: #292D4F;
+    }
+    .jumbotron>.silver-button {
+      margin-top: 20px;
     }
 
 #about-page {
@@ -77,8 +91,10 @@ nav {
     padding-bottom: 5px;
     margin-bottom: 5px;
   }
-  .purple-button {
+  #bio.purple-button {
     margin-top: 10px;
+  }
+  .purple-button {
     background-color: #3F4678;
     color: #9FA8EA;
   }
@@ -100,6 +116,12 @@ nav {
   #portfolio-page .col-sm-6{
     padding-bottom: 10px;
     margin-bottom: 10px;
+  }
+  .skills {
+    float: left;
+  }
+  .tags {
+    float: right;
   }
 
 #contact-page {
@@ -143,7 +165,7 @@ footer {
       color: #E6EFE9/*#9FA8EA*/;
     }
     .socialdot:hover {
-      color: #D1EAC5;
+      color: #9FA8EA;
       border-color: #9FA8EA;
     }
   #copyright {
@@ -153,12 +175,16 @@ footer {
 /* Typography */
 h1, h2, h3, h4 {
   text-align: center;
+  letter-spacing: 2px;
 }
   h1, h2 {
   font-family: 'Pacifico', 'Source Sans Pro', sans-serif;
   }
   h3 {
     padding-top: 15px;
+  }
+  h5 {
+    letter-spacing: 2px;
   }
   h3, h4, h5, p {
   font-family: 'Source Sans Pro', sans-serif;

@@ -7,6 +7,11 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="Bianca, Morris, Wellesley, MIT, UI/UX, Design,
+    Web Development">
+    <meta name="author" content="Bianca Morris">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bianca-Morris.com</title>
     <!-- Bootstrap CSS-->
     <link
@@ -20,10 +25,11 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
       href="https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
       rel="stylesheet"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
@@ -32,7 +38,9 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
-            <i class="fa fa-bars"></i>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#splash-page">Bianca-Morris.com</a>
         </div>
@@ -54,16 +62,16 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
         <div class="jumbotron">
           <h1>Web Development</h1>
           <h2>and Digital Design</h2>
-          <i class="fa fa-code fa-2x"></i>
+          <i class="fas fa-code fa-2x"></i>
           <p>Hi! I'm a recent Wellesley graduate, and current Engineering Fellow. I love front end web development, graphic design, and creating smooth, memorable user experiences.</p>
           <a href="https://www.linkedin.com/in/biancamorris" class="btn btn-default silver-button">
-            <i class="fa fa-linkedin-square"></i>
+            <i class="fab fa-linkedin"></i>
           </a>
           <a href="https://www.freecodecamp.com/bianca-morris" class="btn btn-default silver-button">
-          (<i class="fa fa-fire"></i>)
+          <i class="fab fa-free-code-camp"></i>
         </a>
           <a href="https://github.com/bianca-morris" class="btn btn-default silver-button">
-            <i class="fa fa-github-alt"></i>
+            <i class="fab fa-github"></i>
           </a>
         </div>
       </section>
@@ -72,20 +80,27 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
       <section class="container" id="about-page">
         <header>
           <h2>About Me</h2>
-          <h4>A multimedia rockstar, basically</h4>
+          <h4>A digital media rockstar, basically</h4>
           <hr>
         </header>
         <div class="row">
           <div class="col-sm-4">
-            <img src="/img/bianca.jpg" class="img-responsive center-block">
+            <img
+              src="/img/bianca.jpg"
+              class="img-responsive center-block"
+              alt="Bianca Cartoonified"
+            />
             <!-- Modal broke in bootstrap update... need to fix. -->
             <!-- <button class="btn center-block purple-button" data-toggle="modal" data-target="#cvModal">
               <i class="fa fa-eye"></i> View CV
             </button> -->
-            <a href="https://drive.google.com/file/d/0BxDuGL72i6MvVXRFM1JxN3RsU2M/view?usp=sharing">
-              <button class="btn btn-default center-block silver-button">
-                <i class="fa fa-download"></i> Download CV
-              </button>
+            <a
+              href="https://drive.google.com/file/d/1dCPn6N2ukuVgNFfRmvRVV4Y965ta0rN1/view?usp=sharing"
+              style="max-width: 150px"
+              class="btn btn-default center-block silver-button"
+              target="_blank"
+            >
+              <i class="fa fa-download"></i> Download CV
             </a>
           </div>
           <div class="col-sm-8" id="bio">
@@ -164,17 +179,35 @@ from private beta to live public launch</li>
             <img
               class="img-responsive center-block"
               src="/img/kindred.png"
+              alt="KindredTalent Website"
             />
             <h4>KindredTalent (May 2018)</h4>
             <ul>
               <li>
-                <em>Purpose:</em>
-                To fulfill the 'Build a Tribute Page' requirement of
-                FreeCodeCamp's Front End Web Development Certificate.
+                <em>Description:</em>
+                KindredTalent is a recruitment network focused on entry-level
+                software engineering roles that incentivizes employees and 3rd
+                party recruiters to refer talent.
               </li>
               <li>
-                <em>Skills:</em>
-                HTML, CSS, Bootstrap
+                <em>Role:</em>
+                UI/UX Engineering Intern at KindredTalent
+              </li>
+              <li>
+                <em>Duties:</em>
+                Designed and implemented React UI components, and responsive UI
+                workflows.
+              </li>
+              <li style="list-style-type: none;">
+                <span class="skills">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js-square"></i>
+                  <i class="fab fa-react"></i>
+                  <i class="fas fa-database"></i>
+                </span>
+                <!-- <span class="tags">
+                </span> -->
               </li>
             </ul>
           </div>
@@ -182,17 +215,50 @@ from private beta to live public launch</li>
             <img
               class="img-responsive center-block"
               src="/img/gnom.png"
+              alt="gNom Website"
             />
             <h4>gNom (March 2018)</h4>
             <ul>
               <li>
-                <em>Purpose:</em>
-                To produce a 'data-driven interactive documentary' experience
-                for CMS.338, a course I took with Professor Uricchio at MIT.
+                <em>Description:</em>
+                gNom is an Express.js web application that generates meal plans
+                based on users' genetic data.
               </li>
               <li>
-                <em>Skills:</em>
-                HTML, CSS, Foundation, Javascript, jQuery, and Highcharts.js
+                <em>Role:</em>
+                Full-stack Engineer; 1st Place Winner UC Berkeley's
+                'Hack Your Genome' Hackathon
+              </li>
+              <li>
+                <em>Duties:</em>
+                Designed the index and results pages, w/Bootstrap, used
+                Handlebars to render recipe data from the Edamam API.
+              </li>
+              <li style="list-style-type: none;">
+                <span class="skills">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js-square"></i>
+                </span>
+                <span class="tags">
+                  <a
+                    href="https://github.com/pratouis/gNOM_genome_hackathon"
+                    data-toggle="tooltip"
+                    title="View Repo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <i class="fas fa-trophy"></i>
+                  <a
+                    href="https://medium.com/@genomelink_eng/awakens-inc-hosts-genome-link-hackathon-at-berkeley-skydeck-6e39427ec7aa"
+                    data-toggle="tooltip"
+                    title="In the News"
+                    target="_blank"
+                  >
+                    <i class="fas fa-newspaper"></i>
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -202,17 +268,76 @@ from private beta to live public launch</li>
             <img
               class="img-responsive center-block"
               src="/img/fittest.png"
+              alt="Fittest Mobile App Logo"
             />
             <h4>Fittest (December 2017)</h4>
             <ul>
               <li>
-                <em>Purpose:</em>
-                To produce a 'data-driven interactive documentary' experience
-                for CMS.338, a course I took with Professor Uricchio at MIT.
+                <em>Description:</em>
+                Fittest is a gamified social fitness mobile application. Join
+                weekly tournaments and score points by completing fitness
+                activities. Compete and stay fit together!
               </li>
               <li>
-                <em>Skills:</em>
-                HTML, CSS, Foundation, Javascript, jQuery, and Highcharts.js
+                <em>Role:</em>
+                Back End Developer; UI/UX Designer
+              </li>
+              <li>
+                <em>Duties:</em>
+                Designed color palettes, wireframes, iconography, and typography.
+                Implemented Facebook OAuth with custom Passport local strategy
+                and middleware. Wrote Express.js routes for JSON API, and generated
+                test users/data.
+              </li>
+              <li style="list-style-type: none;">
+                <span class="skills">
+                  <i class="fab fa-js-square"></i>
+                  <i class="fab fa-react"></i>
+                  <i class="fas fa-database"></i>
+                  <i class="fas fa-mobile-alt"></i>
+                </span>
+                <span class="tags">
+                  <a
+                    href="https://github.com/Saminator5/fit-fun"
+                    data-toggle="tooltip"
+                    title="Front End Repo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/epaschke/Fittest-Backend"
+                    data-toggle="tooltip"
+                    title="Back End Repo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://fit-fun.herokuapp.com/"
+                    data-toggle="tooltip"
+                    title="JSON API"
+                    target="_blank"
+                  >
+                    <i class="fas fa-server"></i>
+                  </a>
+                  <a
+                    href="https://docs.google.com/document/d/1e1xD74sCm6jjUhGDmV7ZKSTscWfZnRLtpyj-fE8buYA/edit?usp=sharing"
+                    data-toggle="tooltip"
+                    title="API Docs"
+                    target="_blank"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=m14dgvp_mLQ&feature=youtu.be"
+                    data-toggle="tooltip"
+                    title="View Demo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -220,17 +345,52 @@ from private beta to live public launch</li>
             <img
               class="img-responsive center-block"
               src="/img/collabnotes.png"
+              alt="Collaborative Notes desktop app"
             />
             <h4>Collaborative Notes (November 2017)</h4>
             <ul>
               <li>
-                <em>Purpose:</em>
-                To fulfill the 'Build a Tribute Page' requirement of
-                FreeCodeCamp's Front End Web Development Certificate.
+                <em>Description:</em>
+                Collaborative Notes is a desktop rich-text editor, with real-time
+                collaborative document editing.
               </li>
               <li>
-                <em>Skills:</em>
-                HTML, CSS, Bootstrap
+                <em>Role:</em>
+                Full Stack Developer
+              </li>
+              <li>
+                <em>Duties:</em>
+                Designed and implemented responsive React components, server-side
+                input validation, Draft.js rich text editing, express-sessions
+                with MongoDB, and websockets on the client and server. Reworked
+                code for future publicaton as Electron desktop application.
+              </li>
+              <li style="list-style-type: none;">
+                <span class="skills">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js-square"></i>
+                  <i class="fab fa-react"></i>
+                  <i class="fas fa-database"></i>
+                </span>
+                <span class="tags">
+                  <a
+                    href="https://github.com/Bianca-Morris/CollaborativeNotes"
+                    data-toggle="tooltip"
+                    title="View Repo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=k9cQ_z52RT0&t=40s"
+                    data-toggle="tooltip"
+                    title="Demo Video"
+                    target="_blank"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -240,17 +400,46 @@ from private beta to live public launch</li>
             <img
               class="img-responsive center-block"
               src="/img/wctvsite.png"
+              alt="WCTV website"
             />
             <h4>WCTV Online (May 2017)</h4>
             <ul>
               <li>
-                <em>Purpose:</em>
-                To fulfill the 'Build a Tribute Page' requirement of
-                FreeCodeCamp's Front End Web Development Certificate.
+                <em>Description:</em>
+                WCTV Online was the 2017 landing page for Wellesley College's #1
+                (and only) satire news show. A complete overhaul of the previous
+                WCTV website: a more sleek, modern look, but retaining the
+                iconic pink branding.
               </li>
               <li>
-                <em>Skills:</em>
-                HTML, CSS, Bootstrap
+                <em>Role:</em>
+                Full Stack Developer; Web Director of WCTV
+              </li>
+              <li>
+                <em>Duties:</em>
+                Designed and developed Flask site with SMTP messaging and error
+                logging system. Used Google's Youtube Playlist API to automatically
+                update the front page on video upload, and Open Weather API for
+                weather display.
+              </li>
+              <li style="list-style-type: none;">
+                <span class="skills">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js-square"></i>
+                  <i class="fab fa-python"></i>
+                  <i class="fas fa-database"></i>
+                </span>
+                <span class="tags">
+                  <a
+                    href="https://github.com/bianca-morris/wctvsite"
+                    data-toggle="tooltip"
+                    title="View Repo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -258,17 +447,43 @@ from private beta to live public launch</li>
             <img
               class="img-responsive center-block"
               src="/img/Seedkit.jpg"
+              alt="Seed Kit Data Explorer"
             />
             <h4>SeedKit Data Explorer (May 2016)</h4>
             <ul>
               <li>
-                <em>Purpose:</em>
-                To produce a 'data-driven interactive documentary' experience
-                for CMS.338, a course I took with Professor Uricchio at MIT.
+                <em>Description:</em>
+                The SeedKit Data Explorer is a data-driven interactive documentary
+                produced jointly for CMS.338, and SeedKit (Science Education
+                Equity Development Kit), that allows users to explore correlations
+                between different data metrics for education and global development.
               </li>
               <li>
-                <em>Skills:</em>
-                HTML, CSS, Foundation, Javascript, jQuery, and Highcharts.js
+                <em>Role:</em>
+                Front End Developer; Communications Specialist at SeedKit;
+                Cross-Registered Student at MIT
+              </li>
+              <li>
+                <em>Duties:</em>
+                Designed front-end with Foundation, retrieved data from UN Data's
+                JSON API, and rendered with Highcharts.js.
+              </li>
+              <li style="list-style-type: none;">
+                <span class="skills">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js-square"></i>
+                </span>
+                <span class="tags">
+                  <a
+                    href="https://github.com/Bianca-Morris/CMS338_Project"
+                    data-toggle="tooltip"
+                    title="View Repo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -278,18 +493,47 @@ from private beta to live public launch</li>
             <img
               class="img-responsive center-block"
               src="/img/genkiflash.jpg"
+              alt="Genki Flash Desktop Application"
             />
             <h4>GenkiFLASH (January 2016)</h4>
             <ul>
               <li>
-                <em>Purpose:</em>
-                To streamline my Japanese language learning
-                by creating a flash-card program specific to my course's
-                curriculum. [in Alpha]
+                <em>Description:</em>
+                GenkiFLASH is a desktop flash-card application for Japanese
+                language learning and use alongside the Genki I textbooks by Eri
+                Banno.
               </li>
               <li>
-                <em>Skills Used:</em>
-                Python, Tkinter, Py2Exe
+                <em>Role:</em>
+                Software Developer
+              </li>
+              <li>
+                <em>Duties:</em>
+                Designed user interface in TKinter, and used Py2Exe to deploy the
+                Python app as a Windows executable.
+              </li>
+              <li style="list-style-type: none;">
+                <span class="skills">
+                  <i class="fab fa-python"></i>
+                </span>
+                <span class="tags">
+                  <a
+                    href="https://github.com/Bianca-Morris/GenkiFlash"
+                    data-toggle="tooltip"
+                    title="View Repo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="http://www.softpedia.com/get/Others/Home-Education/GenkiFlash.shtml"
+                    data-toggle="tooltip"
+                    title="View Review"
+                    target="_blank"
+                  >
+                    <i class="fas fa-newspaper"></i>
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -297,22 +541,52 @@ from private beta to live public launch</li>
             <img
               class="img-responsive center-block"
               src="/img/nourish.jpg"
+              alt="Nourish International Email"
             />
-            <h4>Nourish International E-Letter (April 2015)</h4>
+            <h4>Nourish E-Letter (April 2015)</h4>
             <ul>
               <li>
-                <em>Purpose:</em>
-                To produce an E-Letter to thank people who
-                donated to Nourish International during our annual 'Giving
-                Challenge' fundraiser. Built specifically for Gmail's email client.
+                <em>Description:</em>
+                An E-Letter to thank people who donated to Nourish International
+                during our 2015 'Giving Challenge' fundraiser. Built specifically
+                for Gmail's email client.
               </li>
               <li>
-                <em>Skills Used:</em>
-                HTML, CSS
+                <em>Role:</em>
+                HTML Email Designer
+              </li>
+              <li>
+                <em>Duties:</em>
+                Designed responsive email template with HTML tables and inline CSS.
+              </li>
+              <li style="list-style-type: none;">
+                <span class="skills">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                </span>
+                <span class="tags">
+                  <a
+                    href="https://github.com/Bianca-Morris/Nourish-Eletter"
+                    data-toggle="tooltip"
+                    title="View Repo"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
         </div>
+        <div class="row">
+          <h3>More projects viewable at
+            <a
+              href="https://github.com/bianca-morris"
+              target="_blank"
+            >
+              github.com/bianca-morris
+            </a>.
+          </h3>
         </div>
       </section>
 
@@ -325,11 +599,18 @@ from private beta to live public launch</li>
         </header>
         <div class="row">
           <div class="col-sm-6" id="contact-text">
-            <p>I'm currently looking for Fall 2016/Spring 2017 internships where
-              I can further develop my coding and design skills. If you think I
-              could be the right person for a job, send me a note through this
-              form, or contact me at my LinkedIn page.</p>
+            <p>I'm currently primarily seeking full-time Front-End or UI/UX
+              engineering roles in San Francisco, CA, or Orlando, FL starting
+              before September 2018.</p>
+            <p>I'm open to opportunities in other areas as well, though, so if
+              you happen to know of a position that I'm well qualified for, don't
+              hesitate to forward it.</p>
+            <p>
+              You can reach me through this form, or contact me at my
+              <a href="https://linkedin.com/in/biancamorris">LinkedIn</a> page.
+            </p>
             <p>Thanks!</p>
+            <h2 style="font-size: 16px; text-align: left;">Bianca Morris</h2>
           </div>
           <div class="col-sm-6" id="contact-form">
             <form action="/submitMail" method="post">
@@ -401,12 +682,15 @@ from private beta to live public launch</li>
                   maxlength="500"
                 ></textarea>
               </div>
+              <div>
               <button type="reset" class="btn silver-button">
                 <i class="fa fa-trash"></i> Reset
               </button>
+
               <button type="submit" name="submit" class="btn purple-button" value="send">
-                <i class="fa fa-send-o"></i> Submit
+                <i class="fa fa-paper-plane"></i> Submit
               </button>
+              </div>
             </form>
           </div>
         </div>
@@ -430,27 +714,27 @@ from private beta to live public launch</li>
             <h3>Find Me on the Web</h3>
             <a href="https://www.linkedin.com/in/biancamorris">
               <div class="socialdot">
-                <i class="fa fa-linkedin fa-2x"></i>
+                <i class="fab fa-linkedin-in fa-2x"></i>
               </div>
             </a>
             <a href="https://twitter.com/biancaamorris">
               <div class="socialdot">
-                <i class="fa fa-twitter fa-2x"></i>
+                <i class="fab fa-twitter-square fa-2x"></i>
               </div>
             </a>
             <a href="https://www.youtube.com/channel/UCyhWTIAHinK5SeM_6izJcRw">
               <div class="socialdot">
-                <i class="fa fa-youtube-play fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
               </div>
             </a>
             <a href="https://github.com/bianca-morris">
               <div class="socialdot">
-                <i class="fa fa-github fa-2x"></i>
+                <i class="fab fa-github-alt fa-2x"></i>
               </div>
             </a>
             <a href="https://www.freecodecamp.com/bianca-morris">
               <div class="socialdot">
-                <i class="fa fa-fire fa-2x"></i>
+                <i class="fab fa-free-code-camp fa-2x"></i>
               </div>
             </a>
           </div>
@@ -476,5 +760,11 @@ from private beta to live public launch</li>
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
+    <!-- Enable Bootstrap tooltips -->
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
