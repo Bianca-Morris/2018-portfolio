@@ -1,8 +1,6 @@
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
-// const nodemailer = require('nodemailer');
-// const smtpTransport = require('nodemailer-smtp-transport');
 const sgMail = require('@sendgrid/mail');
 
 sgMail.setApiKey(process.env.SENDGRID_KEY);
@@ -10,16 +8,6 @@ sgMail.setApiKey(process.env.SENDGRID_KEY);
 const app = express();
 const PORT = process.env.PORT || 3000;
 // const api = require('./backend/routes');
-
-// Set up email handling
-// const transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   host: 'smtp.gmail.com',
-//   auth: {
-//     user: process.env.TO_EMAIL,
-//     pass: process.env.TO_PASS,
-//   }
-// });
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
@@ -69,14 +57,6 @@ app.post('/submitMail', (req, res, next) => {
       console.log(err);
       next(err);
     });
-  // transporter.sendMail(mailOptions, (error, info) => {
-  //   if (error) {
-  //     console.log(error);
-  //     next(error);
-  //   } else {
-  //     console.log(`Email sent: ${info.response}`);
-  //   }
-  // });
 });
 
 // app.use('/api', api);
