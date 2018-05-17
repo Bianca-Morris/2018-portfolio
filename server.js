@@ -49,9 +49,13 @@ app.post('/submitMail', (req, res, next) => {
   };
   sgMail.send(mailOptions)
     .then((resp) => {
-      console.log('Successful!');
-      console.log(`${resp.statusMessage}! Status Code: ${resp.statusCode}`);
-      res.sendFile(path.join(__dirname, '/public/success.html'));
+      console.log('resp:', resp);
+      if (resp) {
+        console.log('Successful!');
+        console.log(`${resp.statusMessage}! Status Code: ${resp.statusCode}`);
+        res.sendFile(path.join(__dirname, '/public/success.html'));
+      }
+      throw new Error('No response received from mail server...');
     })
     .catch((err) => {
       console.log(err);
