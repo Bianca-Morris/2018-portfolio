@@ -55,7 +55,7 @@ app.post('/submitMail', (req, res, next) => {
         console.log(`${resp.statusMessage}! Status Code: ${resp.statusCode}`);
         res.sendFile(path.join(__dirname, '/public/success.html'));
       }
-      throw new Error('No response received from mail server...');
+      next(new Error('No response received from mail server...'));
     })
     .catch((err) => {
       console.log(err);
