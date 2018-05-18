@@ -7,10 +7,11 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="The web development portfolio of Bianca Allyn Morris.">
     <meta name="keywords" content="Bianca, Morris, Wellesley, MIT, UI/UX, Design,
     Web Development">
     <meta name="author" content="Bianca Morris">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bianca Morris | Welcome</title>
     <link rel="shortcut icon" href="/img/bianca32x32.ico" type="image/x-icon">.
@@ -131,6 +132,85 @@ from private beta to live public launch</li>
                   <li>Generated digital assets in Adobe Photoshop, InDesign, and Illustrator</li>
                   <li>Conducted student body polls and user research for feature planning</li>
                 </ul>
+              <h2 style="font-size: 16px;">Skills</h2>
+              <div id="skills">
+                <div>
+                  <a
+                    data-toggle="tooltip"
+                    title="HTML5"
+                  >
+                    <i class="fab fa-html5 fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="CSS3"
+                  >
+                    <i class="fab fa-css3-alt fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="Javascript (ES6)"
+                  >
+                    <i class="fab fa-js-square fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="Node.js"
+                  >
+                    <i class="fab fa-node fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="React/Redux/Native"
+                  >
+                    <i class="fab fa-react fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="Vue.js"
+                  >
+                    <i class="fab fa-vuejs fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="Python"
+                  >
+                    <i class="fab fa-python fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="Java"
+                  >
+                    <i class="fab fa-java fa-2x"></i>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    data-toggle="tooltip"
+                    title="NPM"
+                  >
+                    <i class="fab fa-npm fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="PostgreSQL"
+                  >
+                    <i class="fas fa-database fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="MongoDB"
+                  >
+                    <i class="fas fa-leaf fa-2x"></i>
+                  </a>
+                  <a
+                    data-toggle="tooltip"
+                    title="Git"
+                  >
+                    <i class="fab fa-git-square fa-2x"></i>
+                  </a>
+                </div>
+              </div>
           </div>
         </div>
       </section>
@@ -372,7 +452,7 @@ from private beta to live public launch</li>
                   <i class="fab fa-css3-alt"></i>
                   <i class="fab fa-js-square"></i>
                   <i class="fab fa-react"></i>
-                  <i class="fas fa-database"></i>
+                  <i class="fas fa-leaf"></i>
                 </span>
                 <span class="tags">
                   <a
@@ -764,8 +844,26 @@ from private beta to live public launch</li>
     <!-- Enable Bootstrap tooltips -->
     <script>
       $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="tooltip"]').tooltip();
+        updateButtonSize();
       });
+
+      // change size of buttons on the mobile/tablet site
+      $(window).resize(updateButtonSize);
+
+      function updateButtonSize() {
+        var viewportWidth = $(window).width();
+        if (viewportWidth < 768) {
+          $("#portfolio-page i").addClass("fa-2x");
+          $("#portfolio-page li:last-child").css("padding-top", "8px");
+          $("#portfolio-page li:last-child").css("padding-bottom", "15px");
+        } else {
+          $("#portfolio-page i").removeClass("fa-2x");
+          $("#portfolio-page li:last-child").css("padding-top", "0");
+          $("#portfolio-page li:last-child").css("padding-bottom", "0");
+
+        }
+      }
     </script>
   </body>
 </html>
