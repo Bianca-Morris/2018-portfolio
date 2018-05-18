@@ -1,13 +1,25 @@
 /* Fixes for mobile/tablet specific quirks */
+@media only screen and (max-width : 468px) {
+  #portfolio-page li:last-child {
+    margin-left: -10%;
+  }
+  #portfolio-page li:last-child>div {
+    display: inline-block;
+  }
+}
+
 @media only screen and (max-width : 768px) {
   #bio {
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
   }
-  #skills {
-    margin: 0 auto;
-    padding-bottom: 30px;
+    #skills {
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+  .tags {
+    margin-bottom: 10px !important;
   }
   #contact-text {
     padding-bottom: 5px;
@@ -35,7 +47,7 @@ nav {
     color: #337ab7;
   }
   nav a {
-    color: #fff;/*#C2C7EA;*/
+    color: #fff;
   }
   .navbar-brand {
     color: #C2C7EA
@@ -48,7 +60,7 @@ nav {
   }
 
 #splash-page {
-  background-color: #3F4678/*#E59749*/;
+  background-color: #3F4678;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -82,12 +94,13 @@ nav {
     }
 
 #about-page {
-  background-color: #C2C7EA /*#D1EAC5 /*C0C5EA*/;
+  background-color: #C2C7EA;
   padding: 60px 10%;
 }
   #about-page img {
     border: solid 2px white;
     border-radius: 400px;
+    margin-bottom: 5px;
     min-width: 50px;
     max-width: 220px;
     /* code for horizontal image flipping from css-tricks.com */
@@ -105,7 +118,7 @@ nav {
   #bio {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #fff;
-    padding-bottom: 10px;
+    padding: 10px 10%;
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
@@ -129,6 +142,9 @@ nav {
     background-color: #545EA3;
     color: #9FA8EA;
   }
+  #bio li {
+    text-align: justify;
+  }
 
 #portfolio-page {
   background-color: #fff;
@@ -137,18 +153,14 @@ nav {
 }
   #portfolio-page img {
     margin-bottom: 20px;
-    /* border: dashed #3F4678 3px; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  /* #portfolio-page .row {
-    padding-bottom: 10px;
-  } */
   #portfolio-page .col-sm-6{
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
-  #portfolio-page li:last-child {
-    width: 90%;
+  #portfolio-page li {
+    text-align: justify;
   }
   .skills {
     float: left;
@@ -159,7 +171,6 @@ nav {
 
 #contact-page {
   background-color: #C2C7EA;
-  /*color: #AADDDA/*8FBCB9*/;
   padding: 60px 10%;
 }
   #contact-form {
@@ -195,7 +206,7 @@ footer {
       border-radius: 50%;
       padding-top: 5px;
       display: inline-block;
-      color: #E6EFE9/*#9FA8EA*/;
+      color: #E6EFE9;
     }
     .socialdot:hover {
       color: #9FA8EA;

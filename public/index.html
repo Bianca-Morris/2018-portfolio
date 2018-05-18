@@ -6,15 +6,19 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
 -->
 <html>
   <head>
+    <!-- SEO Optimization -->
     <meta charset="utf-8">
     <meta name="description" content="The web development portfolio of Bianca Allyn Morris.">
-    <meta name="keywords" content="Bianca, Morris, Wellesley, MIT, UI/UX, Design,
-    Web Development">
+    <meta
+      name="keywords"
+      content="Bianca, Morris, Wellesley, MIT, UI/UX, Design, Web Development"
+    >
     <meta name="author" content="Bianca Morris">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bianca Morris | Welcome</title>
-    <link rel="shortcut icon" href="/img/bianca32x32.ico" type="image/x-icon">.
+    <!-- Browser compatibility/display options -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/bianca32x32.ico" type="image/x-icon">
     <!-- Bootstrap CSS-->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -27,15 +31,20 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
       href="https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro"
       rel="stylesheet"
     />
-    <!-- <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    <link
       rel="stylesheet"
-    /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
     <!-- Custom Styles -->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
+
+  <!-- Enable scrollspy for navbar-->
   <body data-spy="scroll" data-target="#top-nav" data-offset="50">
+
+    <!-- Top navigation -->
     <nav class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -58,7 +67,7 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
       </div>
     </nav>
 
-
+    <!-- Splash page/ intro -->
     <main>
       <section class="container" id="splash-page">
         <div class="jumbotron">
@@ -78,7 +87,7 @@ Purpose: To fulfill the 'build a portfolio' requirement for FreeCodeCamp's Front
         </div>
       </section>
 
-
+      <!-- About my experience page -->
       <section class="container" id="about-page">
         <header>
           <h2>About Me</h2>
@@ -125,12 +134,12 @@ from private beta to live public launch</li>
                 <ul>
                   <li>Year-long engineering fellowship led by senior infrastructure and front-end engineers</li>
                 </ul>
-              <h4 class="text-left">Digital Content Assistant</h4>
+              <h4 class="text-left">Digital Content Assistant at Wellesley College</h4>
                 <ul>
-                  <li>Worked alongside the Web Director to maintain and expand the Wellesley College website</li>
-                  <li>Supported the execution of content/feature updates using Drupal CMS, HTML, and CSS</li>
+                  <li>Worked alongside the Web Director and the Communications and Public Affairs team to maintain and expand the Wellesley College website</li>
                   <li>Generated digital assets in Adobe Photoshop, InDesign, and Illustrator</li>
                   <li>Conducted student body polls and user research for feature planning</li>
+                  <li>Supported the timely execution of content and feature updates using Drupal CMS, HTML, and CSS</li>
                 </ul>
               <h2 style="font-size: 16px;">Skills</h2>
               <div id="skills">
@@ -214,6 +223,7 @@ from private beta to live public launch</li>
           </div>
         </div>
       </section>
+
     <!-- Modal broke in bootstrap update... need to fix. -->
     <!-- <div class="modal fade" id="cvModal" role="dialog">
         <div class="modal-dialog ">
@@ -248,7 +258,7 @@ from private beta to live public launch</li>
       </div>
     </div> -->
 
-
+      <!-- Projects page, with portfolio images -->
       <section class="container" id="portfolio-page">
         <header>
           <h2>Featured Projects</h2>
@@ -277,7 +287,7 @@ from private beta to live public launch</li>
               <li>
                 <em>Duties:</em>
                 Designed and implemented React UI components, and responsive UI
-                workflows.
+                workflows. Connecting front & back end.
               </li>
               <li style="list-style-type: none;">
                 <span class="skills">
@@ -312,7 +322,7 @@ from private beta to live public launch</li>
               </li>
               <li>
                 <em>Duties:</em>
-                Designed the index and results pages, w/Bootstrap, used
+                Designed the index and results pages w/Bootstrap, used
                 Handlebars to render recipe data from the Edamam API.
               </li>
               <li style="list-style-type: none;">
@@ -671,7 +681,7 @@ from private beta to live public launch</li>
         </div>
       </section>
 
-
+      <!-- Contact page and form -->
       <section class="container" id="contact-page">
         <header>
           <h2>Contact Me</h2>
@@ -778,14 +788,14 @@ from private beta to live public launch</li>
       </section>
     </main>
 
-
+    <!-- Footer, with social bar and copyright data -->
     <footer class="footer">
       <div class="container-fluid" id="social-media">
         <div class="row">
           <div class="col-sm-6">
             <h3>About This Page</h3>
             <p>
-              Made with HTML, CSS, Bootstrap (w/FontAwesome), and jQuery by
+              Made with HTML, CSS, Bootstrap (w/FontAwesome), and Javascript by
               Bianca Allyn Morris. Created from scratch to fulfill the "Build a
               Portfolio" requirement for FreeCodeCamp's Front End Web Development
               Certificate.
@@ -841,18 +851,11 @@ from private beta to live public launch</li>
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
-    <!-- Enable Bootstrap tooltips -->
+    <!-- toggle mobile specific classes & enable bootstrap scripts -->
     <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-        updateButtonSize();
-      });
-
       // change size of buttons on the mobile/tablet site
-      $(window).resize(updateButtonSize);
-
-      function updateButtonSize() {
-        var viewportWidth = $(window).width();
+      let updateButtonSize = () => {
+        let viewportWidth = $(window).width();
         if (viewportWidth < 768) {
           $("#portfolio-page i").addClass("fa-2x");
           $("#portfolio-page li:last-child").css("padding-top", "8px");
@@ -861,9 +864,19 @@ from private beta to live public launch</li>
           $("#portfolio-page i").removeClass("fa-2x");
           $("#portfolio-page li:last-child").css("padding-top", "0");
           $("#portfolio-page li:last-child").css("padding-bottom", "0");
-
         }
       }
+
+      // when html is loaded
+      $(document).ready(() => {
+        // enable tooltips
+        $('[data-toggle="tooltip"]').tooltip();
+        // ensure buttons are clickable size for mobile/tablet/desktop
+        updateButtonSize();
+      });
+
+      // when window is resized...
+      $(window).resize(updateButtonSize);
     </script>
   </body>
 </html>
