@@ -32,6 +32,7 @@
     "fibers": "^5.0.0",
     "handlebars": "^4.7.7",
     "mocha": "^8.3.0",
+    "node": "^15.8.0",
     "node-sass": "^5.0.0",
     "nodemailer-smtp-transport": "^2.7.4",
     "prop-types": "^15.7.2",
