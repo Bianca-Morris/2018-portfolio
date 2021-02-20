@@ -4,6 +4,142 @@ object-assign
 @license MIT
 */
 
+/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./base.scss */
+
+/*! !!../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./index.css */
+
+/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
+
+/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
+
+/*! ../../../node_modules/css-loader/dist/runtime/api.js */
+
+/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */
+
+/*! ../components/Footer */
+
+/*! ../components/Header */
+
+/*! ../node_modules/css-loader/dist/runtime/api.js */
+
+/*! ../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */
+
+/*! ./../../public/index.css */
+
+/*! ./ProjectsContainer */
+
+/*! ./Root.dev */
+
+/*! ./assets/stylesheets/base.scss */
+
+/*! ./cjs/react-dom.development.js */
+
+/*! ./cjs/react.development.js */
+
+/*! ./cjs/scheduler-tracing.development.js */
+
+/*! ./cjs/scheduler.development.js */
+
+/*! ./containers/Root */
+
+/*! object-assign */
+
+/*! react */
+
+/*! react-dom */
+
+/*! scheduler */
+
+/*! scheduler/tracing */
+
+/*!**************************!*\
+  !*** ./public/index.css ***!
+  \**************************/
+
+/*!***************************!*\
+  !*** ./frontend/index.js ***!
+  \***************************/
+
+/*!*************************************!*\
+  !*** ./frontend/containers/Root.js ***!
+  \*************************************/
+
+/*!*************************************!*\
+  !*** ./node_modules/react/index.js ***!
+  \*************************************/
+
+/*!***************************************!*\
+  !*** ./frontend/components/Footer.js ***!
+  \***************************************/
+
+/*!***************************************!*\
+  !*** ./frontend/components/Header.js ***!
+  \***************************************/
+
+/*!*****************************************!*\
+  !*** ./frontend/containers/Root.dev.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/react-dom/index.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/scheduler/index.js ***!
+  \*****************************************/
+
+/*!*******************************************!*\
+  !*** ./node_modules/scheduler/tracing.js ***!
+  \*******************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/object-assign/index.js ***!
+  \*********************************************/
+
+/*!***********************************************!*\
+  !*** ./frontend/assets/stylesheets/base.scss ***!
+  \***********************************************/
+
+/*!**************************************************!*\
+  !*** ./frontend/containers/ProjectsContainer.js ***!
+  \**************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/react/cjs/react.development.js ***!
+  \*****************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/scheduler/cjs/scheduler.development.js ***!
+  \*************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
+  \*********************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/cssWithMappingToString.js ***!
+  \************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./public/index.css ***!
+  \*******************************************************************************************************/
+
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./frontend/assets/stylesheets/base.scss ***!
+  \****************************************************************************************************************************/
+
 /**
  * Checks if an event is supported in the current execution environment.
  *
@@ -29,6 +165,15 @@ object-assign
 
 /** @license React v0.20.1
  * scheduler.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.1
+ * react-dom.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *

@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = (env) => {
   const isProduction = env === 'production';
@@ -28,6 +29,14 @@ module.exports = (env) => {
     devServer: {
       contentBase: './public',
       hot: true
+    },
+    optimization: {
+      minimize: true,
+      minimizer: [
+        new TerserPlugin({
+          extractComments: true
+        })
+      ]
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
